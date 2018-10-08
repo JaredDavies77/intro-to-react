@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Components Assignment</title>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel">
+
+    class Leaderboard extends React.Component {
+ render() {
+     return (
+         <table>
+             <thead>
+                 <tr>
+                     <th>Name</th>
+                     <th>Score</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>Tiger Woods</td>
+                     <td>62</td>
+                 </tr>
+                 <tr>
+                     <td>Rickie Fowler</td>
+                     <td>63</td>
+                 </tr>
+                 <tr>
+                     <td>Justin Thomas</td>
+                     <td>64</td>
+                 </tr>
+                 <tr>
+                     <td>Brooks Koepka</td>
+                     <td>65</td>
+                 </tr>
+             </tbody>
+         </table>
+     );
+ }
+}
+       ReactDOM.render(
+         <Leaderboard />, document.getElementById('app')
+       );
+       </script>
+  </body>
+
+</html>
